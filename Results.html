@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+<head>
+	<title>Feedback Results</title>
+	<link href="phenomstyles.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge";
+</head>
+
+<body>
+<div id="wrapper">
+<header><h1>Feedback Results</h1></header>
+<nav>
+<ul>
+<li><a href="index.html">Home</a>&nbsp;&nbsp;
+<li><a href="about.html">About</a>
+</ul>
+</nav>
+<main>
+<h2> Thank you for your feedback! </h2>
+</main>
+<script>
+	const resultsList = document.getElementById('results')
+	new URLSearchParams(window.location.search).forEach((myFName, myLName, myEmail, myComments) => {
+			resultsList.append('${myFName}: ${myLName}: ${myEmail}: ${myComments}')
+			resultsList.append(document.createElement('br'))
+			})
+</script>
+<footer>
+<a href="mailto:ichatmanroyce@mail.dccc.edu">Ian Chatman-Royce</a>
+</footer>
+</div>
+</body>
+
+</html>
+
