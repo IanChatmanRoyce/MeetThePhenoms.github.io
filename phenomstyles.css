@@ -93,7 +93,7 @@ margin-right: auto;
 border-collapse: collapse; }
 th {padding: 2.5em; border: 2px solid #880808;}
 th {text-align: center;
-font-size: 120%;}
+font-size: 200%;}
 .text {text-align: left;}
 form {display: flex; flex-flow:column nowrap;}
 input,textarea {margin-bottom: .5em;}
@@ -148,4 +148,5 @@ input,textarea {margin-bottom: .5em;}
 									/ 180px 1fr;
 					}
 			}
+
 }
